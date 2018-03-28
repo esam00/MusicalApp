@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/music2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/intro_padding"
+        android:shadowColor="@color/text_black"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="280"
+        android:text="@string/intro"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/intro_text_size" />
+
+    <LinearLayout
+        android:id="@+id/all_songs"
+        style="@style/CategoryStyle"
+        android:layout_above="@+id/artist"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alpha=".9"
+            android:padding="@dimen/padding"
+            android:src="@drawable/all" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/all_songs"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/main_list_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/all_songs"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="50dp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/artist"
+        style="@style/CategoryStyle"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alpha=".9"
+            android:padding="@dimen/padding"
+            android:src="@drawable/artist1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/artist"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/main_list_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

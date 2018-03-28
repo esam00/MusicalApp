@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Intro (welcome or something) -->
+    <dimen name="intro_text_size">60sp</dimen>
+    <dimen name="intro_padding">35dp</dimen>
+
+    <dimen name="padding">10dp</dimen>
+
+    <!-- Category of songs -->
+    <dimen name="main_list_text_size">25sp</dimen>
+    <dimen name="song_name_text_size">20sp</dimen>
+    <dimen name="artist_name_text_size">17sp</dimen>
+
+    <!-- Now playing activity _ song details  -->
+    <dimen name="song_name_playing_size">25sp</dimen>
+    <dimen name="artist_name_playing_size">20sp</dimen>
+
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+
+</resources>
